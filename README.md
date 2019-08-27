@@ -7,11 +7,10 @@ For each year and for each type of PM source, the NEI records how many tons of P
 
 # Data
 
-The data used for this assignment are for 1999, 2002, 2005, and 2008 and can be downloaded from the site: 
-<a href="https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip"></a>. 
-
+<p>The data used for this assignment are for 1999, 2002, 2005, and 2008 and can be downloaded [HERE] (https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip). 
+<br>
 The zip file contains two files:
-
+</p>
 PM2.5 Emissions Data (`summarySCC_PM25.rds`):  A data frame with the number of tons of PM2.5 emitted from a specific type of sourcea for 1999, 2002, 2005, and 2008. Extract of the file: 
 ````
 ##    fips      SCC Pollutant Emissions  type year
@@ -33,39 +32,52 @@ PM2.5 Emissions Data (`summarySCC_PM25.rds`):  A data frame with the number of t
 Source Classification Code Table (`Source_Classification_Code.rds`): This table provides a mapping from the SCC digit strings int he Emissions table to the actual name of the PM2.5 source. The sources are categorized in a few different ways from more general to more specific and you may choose to explore whatever categories you think are most useful. For example, source “10100101” is known as “Ext Comb /Electric Gen /Anthracite Coal /Pulverized Coal”.
 
 # Assignment
-
+<p>
 The overall goal of this assignment is to explore the National Emissions Inventory database and see what it says about fine particulate matter pollution in the United states over the period 1999-2008. Any R package can be used for the analysis.
+<br>
 The following questions and tasks must be addressed in the exploratory analysis. For each question/task a single plot must be created. Unless specified, any plotting system in R to make your plot.
+</p>
 
 ### Question 1
+<p>
 Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
-Output: plot1.png
-Outcome: The plot shows that the PM2.5 emitted in the United States has decreased from 1999 to 2008.
+<br>Output: plot1.png
+<br>Outcome: The plot shows that the PM2.5 emitted in the United States has decreased from 1999 to 2008.
+</p>
 
 ### Question 2
+<p>
 Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips=="24510") from 1999 to 2008? Use the base plotting system to make a plot answering this question.
-Output: plot2.png
-Outcome: The plot shows that the PM2.5 emitted in Baltimore City has decreased from 1999 to 2002, increased from 2002 to 2005 and significantly decreased from 2005 to 2008.
+<br>Output: plot2.png
+<br>Outcome: The plot shows that the PM2.5 emitted in Baltimore City has decreased from 1999 to 2002, increased from 2002 to 2005 and significantly decreased from 2005 to 2008.
+</p>
 
 ### Question 3
+<p>
 Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for Baltimore City? Which have seen increases in emissions from 1999–2008? Use the ggplot2 plotting system to make a plot answer this question.
-Output: plot3.png
-Outcome: The plot shows that, for 3 types of sources (NON_ROAD,NONPOINT, ON-ROAD), the PM2.5 emitted in Baltimore City has decreased from 1999 to 2008. For POINT sources it has sightly increased with a higher peek in 2005.
+<br>Output: plot3.png
+<br>Outcome: The plot shows that, for 3 types of sources (NON_ROAD,NONPOINT, ON-ROAD), the PM2.5 emitted in Baltimore City has decreased from 1999 to 2008. For POINT sources it has sightly increased with a higher peek in 2005.
+</p>
 
 ### Question 4
+<p>
 Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?
-Output: plot4.png
-Outcome: The plot shows that, emissions from coal combustion-related sources have decreased from 1999 to 2008 in the United States.
+<br>Output: plot4.png
+<br>Outcome: The plot shows that, emissions from coal combustion-related sources have decreased from 1999 to 2008 in the United States.
+</p>
 
 ### Question 5
+<p>
 How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?
-Output: plot5.png
-Outcome: The plot shows that emissions from motor vehicle sources in Baltimore City have significantly decreased from 1999 to 2008.
+<br>Output: plot5.png
+<br>Outcome: The plot shows that emissions from motor vehicle sources in Baltimore City have significantly decreased from 1999 to 2008.
+</p>
 
 ### Question 6
+<p>
 Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips=="06037"). Which city has seen greater changes over time in motor vehicle emissions?
-Output: plot6.png
-Outcome: The plot shows that, emissions from motor vehicle sources in Baltimore City have decreased by ~258tons from 1999 to 2008 whereas they have increased by ~170 tons in Los Angeles. LA has the most changes over time. 
+<br>Output: plot6.png
+<br>Outcome: The plot shows that, emissions from motor vehicle sources in Baltimore City have decreased by ~258tons from 1999 to 2008 whereas they have increased by ~170 tons in Los Angeles. LA has the most changes over time. 
 
 **Notes**: 
 * The code to download and unzip the raw data file is only included in the first script (plot1.R). In the other scripts we assume that the files are already stored in the working directory.
