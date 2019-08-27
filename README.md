@@ -7,10 +7,10 @@ For each year and for each type of PM source, the NEI records how many tons of P
 
 # Data
 
-<p>The data used for this assignment are for 1999, 2002, 2005, and 2008 and can be downloaded [HERE] (https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip). 
-<br>
+The data used for this assignment are for 1999, 2002, 2005, and 2008 and can be downloaded here: <https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip>. 
+
 The zip file contains two files:
-</p>
+
 PM2.5 Emissions Data (`summarySCC_PM25.rds`):  A data frame with the number of tons of PM2.5 emitted from a specific type of sourcea for 1999, 2002, 2005, and 2008. Extract of the file: 
 ````
 ##    fips      SCC Pollutant Emissions  type year
